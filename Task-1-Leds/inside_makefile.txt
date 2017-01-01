@@ -1,0 +1,38 @@
+cclin@cclin-P5QL-E:~/mycode/stm32f4/stm32f4-examples/Task-1-Leds$ make cleanrm -rf build
+cclin@cclin-P5QL-E:~/mycode/stm32f4/stm32f4-examples/Task-1-Leds$ make allmkdir -p build/inc/STM32F4xx_StdPeriph_Driver/src/
+arm-none-eabi-gcc -c -O0 -g -Wall -I. -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Iinc/STM32F4xx -Iinc/CMSIS -Iinc/STM32F4xx_StdPeriph_Driver/inc -Iinc -Iinc/usb/inc -I. -DUSE_STDPERIPH_DRIVER inc/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.c -o build/inc/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
+mkdir -p build/inc/STM32F4xx_StdPeriph_Driver/src/
+arm-none-eabi-gcc -c -O0 -g -Wall -I. -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Iinc/STM32F4xx -Iinc/CMSIS -Iinc/STM32F4xx_StdPeriph_Driver/inc -Iinc -Iinc/usb/inc -I. -DUSE_STDPERIPH_DRIVER inc/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_i2c.c -o build/inc/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_i2c.o
+mkdir -p build/inc/STM32F4xx_StdPeriph_Driver/src/
+arm-none-eabi-gcc -c -O0 -g -Wall -I. -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Iinc/STM32F4xx -Iinc/CMSIS -Iinc/STM32F4xx_StdPeriph_Driver/inc -Iinc -Iinc/usb/inc -I. -DUSE_STDPERIPH_DRIVER inc/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.c -o build/inc/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
+mkdir -p build/inc/STM32F4xx_StdPeriph_Driver/src/
+arm-none-eabi-gcc -c -O0 -g -Wall -I. -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Iinc/STM32F4xx -Iinc/CMSIS -Iinc/STM32F4xx_StdPeriph_Driver/inc -Iinc -Iinc/usb/inc -I. -DUSE_STDPERIPH_DRIVER inc/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_spi.c -o build/inc/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_spi.o
+mkdir -p build/inc/STM32F4xx_StdPeriph_Driver/src/
+arm-none-eabi-gcc -c -O0 -g -Wall -I. -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Iinc/STM32F4xx -Iinc/CMSIS -Iinc/STM32F4xx_StdPeriph_Driver/inc -Iinc -Iinc/usb/inc -I. -DUSE_STDPERIPH_DRIVER inc/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_exti.c -o build/inc/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_exti.o
+mkdir -p build/inc/STM32F4xx_StdPeriph_Driver/src/
+arm-none-eabi-gcc -c -O0 -g -Wall -I. -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Iinc/STM32F4xx -Iinc/CMSIS -Iinc/STM32F4xx_StdPeriph_Driver/inc -Iinc -Iinc/usb/inc -I. -DUSE_STDPERIPH_DRIVER inc/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_syscfg.c -o build/inc/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_syscfg.o
+mkdir -p build/inc/STM32F4xx_StdPeriph_Driver/src/
+arm-none-eabi-gcc -c -O0 -g -Wall -I. -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Iinc/STM32F4xx -Iinc/CMSIS -Iinc/STM32F4xx_StdPeriph_Driver/inc -Iinc -Iinc/usb/inc -I. -DUSE_STDPERIPH_DRIVER inc/STM32F4xx_StdPeriph_Driver/src/misc.c -o build/inc/STM32F4xx_StdPeriph_Driver/src/misc.o
+mkdir -p build/
+arm-none-eabi-gcc -c -O0 -g -Wall -I. -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Iinc/STM32F4xx -Iinc/CMSIS -Iinc/STM32F4xx_StdPeriph_Driver/inc -Iinc -Iinc/usb/inc -I. -DUSE_STDPERIPH_DRIVER startup_stm32f4xx.S -o build/startup_stm32f4xx.o
+mkdir -p build/
+arm-none-eabi-gcc -c -O0 -g -Wall -I. -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Iinc/STM32F4xx -Iinc/CMSIS -Iinc/STM32F4xx_StdPeriph_Driver/inc -Iinc -Iinc/usb/inc -I. -DUSE_STDPERIPH_DRIVER system_stm32f4xx.c -o build/system_stm32f4xx.o
+mkdir -p build/src/
+arm-none-eabi-gcc -c -O0 -g -Wall -I. -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Iinc/STM32F4xx -Iinc/CMSIS -Iinc/STM32F4xx_StdPeriph_Driver/inc -Iinc -Iinc/usb/inc -I. -DUSE_STDPERIPH_DRIVER src/main.c -o build/src/main.o
+arm-none-eabi-gcc -Tstm32_flash.ld -mthumb -mcpu=cortex-m4 -nostdlib -o build/led.elf build/inc/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o build/inc/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_i2c.o build/inc/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o build/inc/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_spi.o build/inc/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_exti.o build/inc/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_syscfg.o build/inc/STM32F4xx_StdPeriph_Driver/src/misc.o build/startup_stm32f4xx.o build/system_stm32f4xx.o build/src/main.o 
+arm-none-eabi-objcopy -O ihex build/led.elf build/led.hex
+arm-none-eabi-objcopy -O binary build/led.elf build/led.bin
+cclin@cclin-P5QL-E:~/mycode/stm32f4/stm32f4-examples/Task-1-Leds$ sudo make flash
+st-flash write build/led.bin 0x8000000
+2017-01-01T22:34:25 INFO src/stlink-common.c: Loading device parameters....
+2017-01-01T22:34:25 INFO src/stlink-common.c: Device connected is: F4 device, id 0x10016413
+2017-01-01T22:34:25 INFO src/stlink-common.c: SRAM size: 0x30000 bytes (192 KiB), Flash: 0x100000 bytes (1024 KiB) in pages of 16384 bytes
+2017-01-01T22:34:25 INFO src/stlink-common.c: Attempting to write 11140 (0x2b84) bytes to stm32 address: 134217728 (0x8000000)
+EraseFlash - Sector:0x0 Size:0x4000
+Flash page at addr: 0x08000000 erased
+2017-01-01T22:34:25 INFO src/stlink-common.c: Finished erasing 1 pages of 16384 (0x4000) bytes
+2017-01-01T22:34:25 INFO src/stlink-common.c: Starting Flash write for F2/F4
+2017-01-01T22:34:25 INFO src/stlink-common.c: Successfully loaded flash loader in sram
+size: 11140
+2017-01-01T22:34:25 INFO src/stlink-common.c: Starting verification of write complete
+2017-01-01T22:34:26 INFO src/stlink-common.c: Flash written and verified! jolly good!
